@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Feedback, Suggestions, Problems, Bugs</title>
+		<link rel="icon" href="images/picture.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<nav id="navbar">
+			<a href="index.html">Home</a>
+			<a href="heroes.html">Heroes</a>
+			<a href="items.html">Items</a>
+			<a href="basics.html">Basics</a>
+			<a href="explore.html">Explore more</a>
+			<a href="contact_us.html">Contact us</a>
+			<div id="logoes">
+				<a href="https://discord.gg/JWF57JHR2V">
+					<img src="images/discord.png" alt="discord">
+				</a>
+				<a href="https://www.patreon.com/random_defense_adventure">
+					<img src="images/patreon.png" alt="patreon">
+				</a>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2326145404">
+					<img src="images/steam.png" alt="steam">
+				</a>
+			</div>
+		</nav>
+	<main class="content">
+			<h1>Contact us</h1>
+			<p> You can write your suggestions, problems, the bugs you find in the game or the information that you want to learn.</p><br>
+			<form name="form" method="post" action="/add_to_feedback.asp">																										
+				<label for="name">Name:&nbsp;</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name."><br>
+				<label for="email">E-mail:</label>
+				<input type="text" id="email" name="email" placeholder="Enter your e-mail address"><br>
+				<label for="message">Your message:</label><br>
+				<textarea id="message" name="message" placeholder="Enter text here..."></textarea><br>
+				<input type="submit" value="Submit">
+			</form>
+	</main>
+	<footer>
+		Berke Kaan Aşıkoğlu &copy; 2021
+	</footer>
+	<script>
+			window.onscroll = function() {myFunction()};
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+			function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+				} 
+			else {
+				navbar.classList.remove("sticky");
+				}
+			}
+	</script>
+	</body>
+</html>
